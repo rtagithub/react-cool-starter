@@ -11,7 +11,7 @@ import type {
   ReduxState
 } from '../../types';
 import { UserCard } from '../../components';
-import styles from './styles.scss';
+import './styles.scss';
 
 type Props = {
   userInfo: UserInfoType,
@@ -53,7 +53,7 @@ export class UserInfo extends PureComponent<Props> {
 
   render() {
     return (
-      <div className={styles.UserInfo}>
+      <div className="UserInfo">
         <Helmet title="User Info" />
         {this.renderUserCard()}
       </div>

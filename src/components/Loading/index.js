@@ -2,11 +2,11 @@
 
 import React from 'react';
 
-import styles from './styles.scss';
+import './styles.scss';
 
 export default () => {
   return (
-    <div className={styles.Loading}>
+    <div className="Loading">
       <p>Loading...</p>
     </div>
   );

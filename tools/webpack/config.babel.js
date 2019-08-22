@@ -14,7 +14,7 @@ const nodeEnv = process.env.NODE_ENV || 'development';
 const isDev = nodeEnv === 'development';
 
 // Enable/disable css modules here
-const USE_CSS_MODULES = true;
+const USE_CSS_MODULES = false;
 
 // Setup the plugins for development/production
 const getPlugins = () => {

@@ -42,6 +42,7 @@
     "*.sass"
   ],
   "scripts": {
+    "tailwind": "npx tailwind build src/tailwind/tailwind.src.css -o src/tailwind/tailwind.css",
     "dev": "better-npm-run dev",
     "start": "better-npm-run start",
     "build": "yarn clean:build && better-npm-run build",
@@ -332,7 +333,8 @@
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
     "serialize-javascript": "^1.8.0",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "tailwindcss": "^1.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

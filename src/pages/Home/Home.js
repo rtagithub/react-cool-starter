@@ -7,7 +7,7 @@ import Helmet from 'react-helmet';
 import { usersAction } from '../../actions';
 import type { Home as HomeType, Dispatch, ReduxState } from '../../types';
 import { UserList } from '../../components';
-import styles from './styles.scss';
+import './styles.scss';
 
 type Props = { home: HomeType, fetchUsersIfNeeded: () => void };
 
@@ -37,7 +37,7 @@ export class Home extends PureComponent<Props> {
 
   render() {
     return (
-      <div className={styles.Home}>
+      <div className="Home">
         <Helmet title="Home" />
         {this.renderUserList()}
       </div>

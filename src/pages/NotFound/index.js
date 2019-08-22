@@ -3,7 +3,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import styles from './styles.scss';
+import './styles.scss';
 
 type Props = { staticContext: Object };
 
@@ -14,7 +14,7 @@ export default ({ staticContext }: Props) => {
   if (staticContext) staticContext.status = '404'; // eslint-disable-line no-param-reassign
 
   return (
-    <div className={styles.NotFound}>
+    <div className="NotFound">
       <Helmet title="Oops" />
       <p>Oops, Page was not found!</p>
     </div>

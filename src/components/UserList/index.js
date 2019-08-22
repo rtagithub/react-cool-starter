@@ -4,12 +4,12 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import styles from './styles.scss';
+import './styles.scss';
 
 type Props = { list: Array<Object> };
 
 export default ({ list }: Props) => (
-  <div className={styles.UserList}>
+  <div className="UserList">
     <h4>User List</h4>
     <ul>
       {list.map(({ id, name }) => (
